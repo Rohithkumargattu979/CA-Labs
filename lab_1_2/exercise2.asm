@@ -7,14 +7,14 @@
 
 main:
     # Print Input Message
-    li	$v0, 4		        
+    li	$v0, 4	#load 4 to print a string	        
     la	$a0, imsg		     
-    syscall
+    syscall #invoke system call
 
     # Take Input
-    li	$v0, 5		        
+    li	$v0, 5	#load 5 to read integer	        
     syscall                     
-    move 	$t0, $v0		    
+    move $t0, $v0  #move the read contents to reg t0
 
     # Print Output Message
     li	$v0, 4		        
@@ -25,6 +25,9 @@ main:
     li	$v0, 1		        
     move 	$a0, $t0		    
     syscall
-
-    li	$v0, 10		        
+    
+    #exit
+    li	$v0, 10	 #load 10 to exit      
     syscall
+    
+    #@RohithGattu
