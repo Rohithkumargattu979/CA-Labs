@@ -7,7 +7,7 @@
 
 # double operations - double precision
 #### load - l.d <br/>
-#### move - mov.s <br/>
+#### move - mov.d <br/>
 #### read - $v0, 7 in $f12 <br/>
 #### print 0 $v0, 3 <br/>
 ### Can only be stored in even registers like $f0, $f2..$f30 <br/>
